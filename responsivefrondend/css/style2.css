@@ -1,0 +1,70 @@
+@font-face {
+  font-family: CutiveMono;
+  src:url(../font/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: Cousine-Bold;
+  src:url(../font/Cousine-Bold.ttf);
+}
+
+@font-face {
+  font-family: NotoSerif-Regular;
+  src:url(../font/NotoSerif-Regular.ttf);
+}
+
+
+body{
+ background-image: url("../img/light-grey-terrazzo.png");
+
+}
+
+h1.logo{
+  font-size: 44px;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: Cousine-Bold;
+}
+
+.cointener{
+  background-image: url("../img/dust_scratches.png");
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border-collapse:collapse;  /*usuniecie odstepu przez border-collapse*/
+}
+.title{
+  background-color: blue;
+}
+
+.time{
+  background-color: orange;
+}
+.footer{
+  background-image: url("../img/christmas-colour.png");
+  font-family: Cousine-Bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+td{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-family: CutiveMono;
+  border: 1px solid black;
+
+}
+
+td > b{
+  font-family: OxygenMono;
+}
+
+th{
+    font-family: NotoSerif-Regular;
+}

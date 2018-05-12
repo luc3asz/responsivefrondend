@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+	<title>The World Wide Web project</title>
+
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+	<link rel="stylesheet" href="../scss/cern.css">
+  <link rel="stylesheet" href="../leaflet.css"/>
+  <script src="/leaflet/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+
+
+</head>
+
+<body>
+  <header>
+		<h1>World Wide Web</h1>
+  </header>
+
+<main>
+		The WorldWideWeb (W3) is a wide-area
+		<a href="WhatIs.html" target="_blank" name=0>hypermedia</a>
+		information retrieval
+		initiative aiming to give universal
+		access to a large universe of documents.<P>
+		Everything there is online about
+		W3 is linked directly or indirectly
+		to this document, including an
+		<a href="Summary.html" target="_blank" name=24>executive summary</a>
+		of the project,
+		<a name=29 href="administration/Mailing/Overview.html"  target="_blank">Mailing lists</a>
+		,
+		<a name=30 href="Policy.html" target="_blank">Policy</a>
+		, November's
+		<a name=34 href="News/9211.html" target="_blank">W3  news</a>
+		,
+		<a name=41 href="FaQ/List.html" target="_blank">Frequently asked Questions</a> .
+		<DL>
+		<DT>
+				<a name=44 href="../DataSources/Top.html" target="_blank">What's out there?</a>
+		<DD>
+				Pointers to the world's online information,
+				<a name=45 href="../DataSources/bySubject/Overview.html" target="_blank"> subjects</a>
+		,
+		<a name=z54 href="../DataSources/WWW/Servers.html" target="_blank">W3 servers</a>, etc.
+		<DT>
+				<a name=46 href="Help.html" target="_blank">Help</a>
+		<DD>
+				on the browser you are using
+		<DT>
+				<a name=13 href="Status.html">Software Products</a>
+		<DD> a list of W3 project
+		components and their current state.
+		(e.g.
+		<a name=27 href="LineMode/Browser.html" target="_blank">Line Mode</a> ,X11
+		<a name=35 href="Status.html#35" target="_blank">Viola</a> ,
+		<a name=26 href="NeXT/WorldWideWeb.html" target="_blank">NeXTStep</a>
+		,
+		<a name=25 href="Daemon/Overview.html" target="_blank">Servers</a> ,
+		<a name=51 href="Tools/Overview.html" target="_blank">Tools</a> ,
+		<a name=53 href="MailRobot/Overview.html" target="_blank"> Mail robot</a> ,
+		<a name=52 href="Status.html#57" target="_blank">Library</a> )
+		<DT>
+				<a name=47 href="Technical.html" target="_blank">Technical</a>
+		<DD> Details of protocols, formats, program internals etc
+		<DT>
+				<a name=40 href="Bibliography.html" target="_blank">Bibliography</a>
+		<DD>
+				Paper documentation
+				on  W3 and references.
+		<DT>
+				<a name=14 href="People.html" target="_blank">People</a>
+		<DD> a list of some people involved
+		in the project.
+		<DT>
+				<a name=15 href="History.html" target="_blank">History</a>
+		<DD>
+				a summary of the history of the project.
+		<DT>
+				<a name=37 href="Helping.html" target="_blank">How can I help</a> ?
+		<DD>
+				If you would like to support the web..
+		<DT>
+				<a name=48 href="../REaDME.html" target="_blank">Getting code</a>
+		<DD>
+				Getting the code by
+				<a name=49 href="LineMode/Defaults/Distribution.html" target="_blank">anonymous FTP</a>
+				, etc.
+		</DL>
+</main>
+
+<map>
+ <h2> Mapa Cern - Genewa </h2>
+  <div id="mapid"> </div>
+</map>
+
+    <nav>
+      NAV
+    </nav>
+  <aside>
+    ASIDE
+  </aside>
+
+  <footer>
+      ME@YOU
+  </footer>
+</body>
+<script>
+    var mymap = L.map('mapid').setView([46.23439,6.0539691], 15);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom: 18,
+      id: 'mapbox.streets'
+    }).addTo(mymap);
+    L.marker([46.23439,6.0539691]).addTo(mymap)
+    .bindPopup("<b>CERN</b> IdeaSquare.").openPopup();
+    var popup = L.popup();
+</script>
+</html>

@@ -1,0 +1,103 @@
+
+@font-face {
+  font-family: 'NotoSerif';
+  src: url('../font/NotoSerif/NotoSerif-Bold.ttf');
+}
+body{
+  background-color: #ffff66;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.main caption {
+  font-size: 1.5em;
+  margin: .5em;
+  font-family: "NotoSerif";
+}
+
+tr {
+  background-color: white;
+  border: 1px solid #212121;
+  padding: .35em;
+
+}
+tr:hover{
+  background-color: #ffff66;
+  color: black;
+
+}
+
+th, td {
+  padding: .600em;
+  text-align: center;
+}
+
+th, a {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .1em;;
+  text-transform: uppercase;
+  background-color: #c51616;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  table {
+    border: none;
+  }
+
+  caption {
+    font-size: 1.5em;
+  }
+
+  thead {
+    border: none;
+    overflow: hidden;
+    position: absolute;
+    width: 0px;
+  }
+
+  tr {
+    border-bottom: 1px solid #212121;
+    display: block;
+    margin-bottom: .625em;
+  }
+  tr:hover{
+    background-color: #f4b942;
+    color: inherit;
+  }
+
+  td {
+    border-bottom: 1px solid blue;
+    display: block;
+    font-size: .9em;
+    text-align: right;
+  }
+  td:hover{
+    background-color: white;
+    color: black;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+
+  td:last-child {
+    border-bottom: 0;
+  }
+
+}

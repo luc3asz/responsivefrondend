@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Aladin;
+  src:url(../font/Aladin-Regular.ttf);
+}
+@font-face {
+  font-family: OxygenMono;
+  src: url(../font/OxygenMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: BerkshireSwash;
+  src:url(../font/BerkshireSwash-Regular.ttf);
+}
+
+
+body{
+ background-image: url("../img/doodles.png");
+ overflow: scroll;
+}
+
+h1.logo{
+  font-size: 44px;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: BerkshireSwash;
+}
+
+h2.logo{
+
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+  margin-top: 100px;
+
+}
+
+
+.cointener{
+  background-image: url("../img/intersection.png");
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse; /*usuniecie odstepu przez border-collapse*/
+}
+
+
+td{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-family: OxygenMono;
+}
+
+.bottom{
+  border-bottom: 1px solid black;
+}
+.bottom2{
+  border-bottom: 2px solid black;
+}
+.left{
+ border-left: 1px solid black;
+}
+
+.left-bottom{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.right-bottom{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.left-rigt-bottom{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.winer{
+  text-align: center;
+  font-size: 22px;
+  font-family: Aladin;
+}

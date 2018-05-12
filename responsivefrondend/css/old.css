@@ -1,0 +1,317 @@
+@font-face {
+  font-family: CutiveMono-Regular;
+  src: url("../font/CutiveMono-Regular.ttf");
+}
+@font-family{
+ font-family: NotoSerif-Regular;
+ src: url("../img/NotoSerif-Regular.ttf");
+}
+
+body{
+  /* Background pattern from subtlepatterns.com */
+  background-image: url("../img/tlo.png");
+  font-size: 44px;
+  font-family: CutiveMono-Regular;
+}
+
+.header-cointener{
+ display:flex;
+ /*background-image: url("../img/dark-grey-terrazzo.png");*/
+ color: white;
+ flex-direction: column;
+ font-family: NotoSerif-Regular;
+}
+
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav{
+  text-align: center;
+}
+
+header ul li {
+ font-size: 32px;
+ display: inline-block;
+ padding-left: 35px;
+ padding-right: 35px;
+}
+
+header ul li a {
+ text-decoration: none;
+ color: #ddd;
+}
+
+li a:hover {
+ color: #B6B6B6;
+}
+
+@media screen and (min-width : 1024px) {
+ .header-container {
+   flex-direction: row;
+   justify-content: space-between;
+ }
+}
+
+.cointener{
+  display: grid;
+  width: 1000px;
+  min-height:1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+}
+
+#box1{
+ grid-area: 1/1/3/3;
+ background-image: url("../img/medor.jpg");
+ height: 100%;
+ background-size: cover;
+ background-position: center;
+ border-radius: 10px;
+ transition: all 1s ease-in-out;
+
+}
+
+#box2{
+  grid-area: 1/3/4/6;
+  background-image: url("../img/ja2.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center center
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+
+
+}
+
+#box3 {
+  grid-area: 3/1/5/3;
+  background-image: url("../img/kot.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+
+}
+
+#box4{
+  grid-area: 4/3/5/4;
+    background-image: url("../img/wolf2.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+#box5{
+  grid-area: 4/4/6/6;
+  background-image: url("../img/error.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+
+}
+
+#box6{
+  grid-area: 5/1/6/4;
+  background-image: url("../img/kon.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+
+#box1:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+#box2:hover{
+  transform: scale(0.9);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#box3:hover{
+  transform: scale(0.9);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#box4:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+
+}
+
+#box5:hover{
+  transform: scale(0.9);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#box6:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1000px){
+  .cointener{
+    display: grid;
+    width: 200px;
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  #box1{
+   grid-area: 1/1/2/2;
+   background-image: url("../img/medor.jpg");
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   transition: all 1s ease-in-out;
+  }
+
+
+  #box2{
+    grid-area: 2/1/3/2;
+    background-image: url("../img/ja2.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+
+  }
+
+  #box3 {
+    grid-area: 3/1/4/2;
+    background-image: url("../img/kot.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+
+  }
+
+  #box4{
+    grid-area: 4/1/5/2;
+      background-image: url("../img/wolf2.jpg");
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+  }
+
+  #box5{
+    grid-area: 5/1/6/2;
+    background-image: url("../img/error.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+
+  }
+
+  #box6{
+    grid-area: 6/1/7/2;
+    background-image: url("../img/kon.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+  }
+
+  #box1:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+  #box2:hover{
+    transform: scale(0.9);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  #box3:hover{
+    transform: scale(0.9);
+    opacity: 0.5;
+    cursor: pointer;
+
+  }
+
+  #box4:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+  #box5:hover{
+    transform: scale(0.9);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  #box6:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+}
+
+
+
+.footer-cointener{
+  /* background-color: #2F3336; */
+
+  color: #efefef;
+  font-size: 17px;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+
+/*
+.menu{
+  list-style-type: none;
+  font-size: 22px;
+  padding: 10px;
+
+}
+
+.menu > li{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a{
+  color: #fff;
+  text-decoration: none;
+}
+*/
